@@ -1,6 +1,7 @@
 ﻿using CQRS.Sample.CommandHandlers;
 using CQRS.Sample.Commands;
 using CQRS.Sample.Events;
+using CQRS.Sample.EventHandlers;
 using CQRS.Sample.Infrastructure;
 using Microsoft.Practices.Unity;
 using System;
