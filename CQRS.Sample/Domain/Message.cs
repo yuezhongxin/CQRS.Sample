@@ -28,9 +28,9 @@ namespace CQRS.Sample.Domain
         public Contact Receiver { get; private set; }
         public string IP { get; private set; }
 
-        public void Send(Message message)
+        public void Send()
         {
-            eventBus.Publish(new MessageSentEvent(message));
+            eventBus.Publish(new MessageSentEvent(this));
         }
     }
 }
