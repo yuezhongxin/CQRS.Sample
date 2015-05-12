@@ -17,7 +17,7 @@ namespace CQRS.Sample.CommandHandlers
             var sender = VerifySenderService.Verify(command.SenderLoginName);
             var receiver = VerifyReceiverService.Verify(command.RecipientDisplayName);
             var message = new Message(command.Title, command.Content, sender, receiver);
-            message.Send(message);
+            message.Send();
         }
     }
 }
