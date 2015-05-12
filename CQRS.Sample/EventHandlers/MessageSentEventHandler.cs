@@ -11,7 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CQRS.Sample.CommandHandlers
+namespace CQRS.Sample.EventHandlers
 {
     public class MessageSentEventHandler : 
         IEventHandler<MessageSentEvent>,
